@@ -1,0 +1,11 @@
+9847 [Test worker] INFO  com.elena.trello.tests.TestBase - Start method testloginAtlassian
+50129 [Test worker] INFO  com.elena.trello.tests.TestBase - Stop method testloginAtlassian
+50132 [Test worker] INFO  com.elena.trello.tests.TestBase - Start method negativeTestLogin
+70001 [Test worker] INFO  com.elena.trello.tests.TestBase - Stop method negativeTestLogin
+70003 [Test worker] INFO  com.elena.trello.tests.TestBase - Start method negativeTestLoginwithoutPassword
+21:30:58.409  INFO  com.elena.trello.tests.TestBase - Start method testloginAtlassian
+21:31:38.913  INFO  com.elena.trello.tests.TestBase - Stop method testloginAtlassian
+21:31:38.916  INFO  com.elena.trello.tests.TestBase - Start method negativeTestLogin
+21:31:59.672  INFO  com.elena.trello.tests.TestBase - Stop method negativeTestLogin
+21:31:59.674  INFO  com.elena.trello.tests.TestBase - Start method negativeTestLoginwithoutPassword
+21:32:20.371  INFO  com.elena.trello.tests.TestBase - Stop method negativeTestLoginwithoutPassword

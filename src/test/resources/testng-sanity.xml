@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity" verbose="1">
+    <test name="SanityTests">
+        <classes>
+            <class name="com.elena.trello.tests.LoginAtlassianAccountTest">
+                <methods>
+                    <include name="testloginAtlassian"/>
+                    <exclude name="negativeTestLogin"/>
+                    <exclude name="negativeTestLoginwithoutPassword"/>
+                </methods>
+            </class>
+
+            <class name="com.elena.trello.tests.BoardCreationTests"/>
+            <class name="com.elena.trello.tests.BoardDeletionTests"/>
+        </classes>
+    </test>
+</suite>

@@ -12,8 +12,38 @@ repositories {
 dependencies {
     testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     testImplementation 'org.testng:testng:7.1.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
 }
 
 test {
     useTestNG()
+}
+
+task firstTest(type: Test) {
+
+    useTestNG {
+        if(project.hasProperty('browser')){
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}
+
+task sanity(type: Test) {
+    useTestNG {
+       suites 'src/test/resources/testng-sanity.xml'
+    }
+        if(project.hasProperty('browser')){
+            systemProperty 'browser', "${browser}"
+
+    }
+}
+
+task login(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/testng-loginonly.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+
+    }
 }
